@@ -3,8 +3,6 @@
 ## Summary
 This repository was created to help state teams working with the [National Zoning Atlas](https://www.zoningatlas.org/) collect county and Place-level data from the U.S. Census Bureau. The outputs include an Excel workbook listing Census Places by type (*e.g.*, city, town, borough, etc.) by largest county overlap, a water-clipped shapefile of Census Places, and a coastline-clipped shapefile of counties. These outputs are generated for whichever state the user specifies.
 
-<iframe width="800" height="450" src="https://github.com/snmarkley1/NZA-Census-Places-Counties/blob/main/place_map.html" > </iframe>
-
 ## Contents
 This repository includes two folders: **scripts** and **tables**.
 
