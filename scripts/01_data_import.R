@@ -248,39 +248,38 @@ write.xlsx(pc_clean, paste0(tables_folder, "/census_places_by_county.xlsx"))
 ##-----------------------------------------------------
 
 # prep
-`Census Places` <- place_land
-Counties <- county_fix
-
-## Set mapview options to allow export
-mapviewOptions(fgb = FALSE)
-
-## create map object
-map_obj <-
-  mapview(
-    `Census Places`, 
-    col.regions = "#B31B1B", 
-    alpha.regions = 0.6,
-    label = "NAMELSAD",
-    map.types = c("CartoDB.Positron", "Esri.WorldImagery"),
-    popup = FALSE
-  ) +
-  mapview(
-    Counties, 
-    alpha.regions = 0, 
-    legend = FALSE,
-    map.types = c("CartoDB.Positron", "Esri.WorldImagery"),
-    label = "NAMELSAD",
-    popup = FALSE
-  )
-
-
-map_obj
-
-
-## Save out as HTML
-mapshot(
-  map_obj, 
-  url = "place_map.html",
-  remove_controls = c("homeButton", "drawToolbar", "easyButton")
-)
-
+# `Census Places` <- place_land
+# Counties <- county_fix
+# 
+# ## Set mapview options to allow export
+# mapviewOptions(fgb = FALSE)
+# 
+# ## create map object
+# map_obj <-
+#   mapview(
+#     `Census Places`, 
+#     col.regions = "#B31B1B", 
+#     alpha.regions = 0.6,
+#     label = "NAMELSAD",
+#     map.types = c("CartoDB.Positron", "Esri.WorldImagery"),
+#     popup = FALSE
+#   ) +
+#   mapview(
+#     Counties, 
+#     alpha.regions = 0, 
+#     legend = FALSE,
+#     map.types = c("CartoDB.Positron", "Esri.WorldImagery"),
+#     label = "NAMELSAD",
+#     popup = FALSE
+#   )
+# 
+# 
+# map_obj
+# 
+# 
+# ## Save out as HTML
+# mapshot(
+#   map_obj, 
+#   url = "place_map.html",
+#   remove_controls = c("homeButton", "drawToolbar", "easyButton")
+# )
