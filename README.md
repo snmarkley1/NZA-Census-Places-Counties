@@ -11,4 +11,4 @@ The **scripts** folder contains two R scripts:
 - `00_preamble.R` prepares the workspace by loading the required packages, etc. It is called in `01_data_import.R`.
 - `01_data_import.R` generates the outputs. It is set to prepare the table and shapefiles for New York. Users may change the state on *line 16*.
 
-The **tables** folder contains on Excel workbook copied from the [U.S. Census](https://www.census.gov/library/reference/code-lists/legal-status-codes.html) that translates the Census Place types from numerical Legal/Statistical Area Description (LSAD) codes to readable text. These LSADs specify if a Census Place is considered a city, borough, township, village, and so on.
+The **tables** folder contains on Excel workbook copied from the [U.S. Census](https://www.census.gov/library/reference/code-lists/legal-status-codes.html) that translates the Census Place types from numerical Legal/Statistical Area Description (LSAD) codes to readable text. These LSADs specify if a Census Place is a city, borough, township, village, Census Designated Place (CDP), and so on.
